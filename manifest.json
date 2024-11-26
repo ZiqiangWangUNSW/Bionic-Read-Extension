@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Bionic Reading Formatter",
+  "version": "1.0",
+  "description": "将网页内容转换为Bionic Reading格式。",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
